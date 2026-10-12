@@ -9,8 +9,6 @@
   --border: #cbd5e1;
   --radius: 8px;
   --space: 16px;
-  
-
   --alert-bg: #eff6ff;
   --alert-border: #93c5fd;
   --alert-text: #1e3a8a;
@@ -26,7 +24,6 @@
     --text: #f8fafc;
     --muted: #94a3b8;
     --border: #334155;
-    
     --alert-bg: #1e293b;
     --alert-border: #2563eb;
     --alert-text: #bfdbfe;
