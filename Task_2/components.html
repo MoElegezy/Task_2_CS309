@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studio - Component Library</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Studio</a>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="components.html">Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Component library</h1>
+      <p class="label">Every style on this page comes from the CSS variables in styles.css.</p>
+    </section>
+
+    <!-- Design tokens -->
+    <section class="section">
+      <h2>Design tokens</h2>
+      <div class="swatches">
+        <div class="swatch"><i style="background: var(--primary)"></i><code>--primary #2563eb</code></div>
+        <div class="swatch"><i style="background: var(--bg)"></i><code>--bg #f8fafc</code></div>
+        <div class="swatch"><i style="background: var(--text)"></i><code>--text #1e293b</code></div>
+      </div>
+    </section>
+
+    <!-- Buttons -->
+    <section class="section">
+      <h2>Buttons</h2>
+      <div class="row">
+        <div>
+          <button type="button" class="btn">Default</button>
+          <div class="label">default</div>
+        </div>
+        <div>
+          <button type="button" class="btn is-hover">Hover</button>
+          <div class="label">hover</div>
+        </div>
+        <div>
+          <button type="button" class="btn" disabled>Disabled</button>
+          <div class="label">disabled</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- [جديد] Alert / Notification Component -->
+    <section class="section">
+      <h2>Alert / Notification</h2>
+      <div class="alert alert-info" role="status">
+        <span class="alert-icon" aria-hidden="true">ℹ</span>
+        <div class="alert-content">
+          <strong>Information:</strong> Your changes have been successfully saved.
+        </div>
+      </div>
+    </section>
+
+    <!-- [جديد] Form Elements Component -->
+    <section class="section">
+      <h2>Form Elements</h2>
+      <form class="form-grid" action="#" onsubmit="return false;">
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Jane Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label for="user-role">Role</label>
+          <select id="user-role" name="user-role">
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Product Manager</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn">Save Profile</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- [جديد] CSS-only Modal Component -->
+    <section class="section">
+      <h2>CSS-Only Modal</h2>
+      <a href="#modal-demo" class="btn">Open Modal</a>
+
+      <!-- النافذة المنبثقة المعتمدة على :target فقط -->
+      <div id="modal-demo" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-box">
+          <h3 id="modal-title">Pure CSS Modal</h3>
+          <p>This modal is opened and closed using the CSS <code>:target</code> selector without any JavaScript.</p>
+          <a href="#" class="btn" aria-label="Close modal">Close Window</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card Component -->
+    <section class="section">
+      <h2>Card</h2>
+      <article class="card" style="max-width: 360px">
+        <h3>Card title</h3>
+        <p>A short description that explains what this card is about.</p>
+        <a class="btn" href="#">Read more</a>
+      </article>
+    </section>
+
+    <!-- Responsive Table -->
+    <section class="section">
+      <h2>Responsive table</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Name</th><th>Role</th><th>Email</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Ada Lovelace</td><td>Engineer</td><td>ada@example.com</td><td><span class="badge">Active</span></td></tr>
+            <tr><td>Linus Torvalds</td><td>Maintainer</td><td>linus@example.com</td><td><span class="badge">Active</span></td></tr>
+            <tr><td>Grace Hopper</td><td>Admiral</td><td>grace@example.com</td><td><span class="badge off">Away</span></td></tr>
+            <tr><td>Alan Turing</td><td>Researcher</td><td>alan@example.com</td><td><span class="badge">Active</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" style="margin-top: 48px">
+    <div class="container">Component library</div>
+  </footer>
+</body>
+</html>
